@@ -1,0 +1,13 @@
+The Sales data is raw data used for the project; it includes manufacturer names, product names, sales costs, etc. 
+It can be used to test Excel automation by uploading new data into the sales profit or other columns to see how it reflects in the other workflow sheets.
+
+The Invoice Sheet was created by importing the sales, manufacturers, product name, invoice id, order date, profit, quantity of orders, and price.
+I renamed the sales to revenue for easy identification for the calculation of new columns.
+I feature engineered the percentage profit column using the revenue and profit columns with basic Excel formulas.
+The status is generated using the if function to approve a margin equal to or less than 50%, and unapproved others above 50%
+
+The macro button Import & Update Invoice can be used to run the automation
+
+The Pivot table shows the average prices, quantity of orders and percentage of profit for the approved orders only.
+The Vendor Master data is generated from the pivot table, and it is all linked to the automation.
+
